@@ -1,0 +1,54 @@
+
+time {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:white;
+    font-size: 1.1em;
+
+}
+
+.nw-btn {
+  text-transform: uppercase;
+  color:white;
+  background-color: red;
+  padding: 5px;
+}
+.nw-btn-white {
+  text-transform: uppercase;
+  color:red;
+  background-color: white;
+  padding: 5px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: 'Noticia Text', serif;
+  font-weight: bold;
+  line-height: 0.9em;
+}
+.nw-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+.nw-btn-white:hover {
+  text-decoration: none;
+  color: red;
+}
+.bg-red{
+  background-color: red;
+}
+nav ul li {
+  border-left: 1px solid lightGray;
+  flex-grow: 1;
+  text-align: center;
+
+
+}
+nav ul li a.nav-link {
+  color: rgba(0,0,0,1) !important;
+  font-family: 'Noticia Text',serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+nav ul li:first-child {
+  border-left: none;
+}
