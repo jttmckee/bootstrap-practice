@@ -93,7 +93,9 @@ form button {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+.opinion-piece {
+  height: 80px;
+}
 .opinion-piece img {
   padding: 0;
   object-fit: scale-down;
