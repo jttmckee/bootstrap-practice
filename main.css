@@ -5,18 +5,35 @@ time {
     font-size: 1.1em;
 
 }
+h1 {
+  text-transform: uppercase;
+  color: gray;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.3em;
+}
+a.link, a.nav-link {
+  color: rgba(0,0,0,1) !important;
+  text-decoration: none;
+}
+a.link:hover, a.nav-link:hover {
+  color: red !important;
+
+}
+.nav-link{
+  white-space: nowrap;
+}
 
 .nw-btn {
   text-transform: uppercase;
   color:white;
   background-color: red;
-  padding: 5px;
+  padding: 7px;
 }
 .nw-btn-white {
   text-transform: uppercase;
   color:red;
   background-color: white;
-  padding: 5px;
+  padding: 7px;
 }
 .navbar-brand {
   font-weight: bold;
@@ -44,11 +61,99 @@ nav ul li {
 
 }
 nav ul li a.nav-link {
-  color: rgba(0,0,0,1) !important;
-  font-family: 'Noticia Text',serif;
+  font-family: "Noticia Text",serif;
   font-size: 1.1em;
   font-weight: bold;
 }
+
+
 nav ul li:first-child {
   border-left: none;
+}
+.bottom-nav {
+  position: relative;
+  padding-right: 40px;
+}
+
+.bottom-nav:before {
+  position: absolute;
+  right:0;
+  top:0;
+  width: 50px;
+  border-top: 12px solid red;
+  border-left: 12px solid white;
+  content: "";
+  display: block;
+  background-color: red;
+}
+
+form button {
+
+  background: url("images/search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.opinion-piece img {
+  padding: 0;
+  object-fit: scale-down;
+}
+.opinion-piece div {
+  padding: 0 4px 0 8px;
+}
+.opinion-piece a.link {
+  display: block;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.by-link {
+  display: block;
+  text-transform: uppercase;
+  color:dimGray;
+  font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
+  font-weight: bold;
+}
+.by-link:hover {
+  color:red;
+  text-decoration: none;
+}
+.opinion-latest > div {
+  margin-top: 12px;
+}
+@media only screen and (max-width: 1000px) {
+  .navbar .time {
+    display: none ;
+  }
+  .navbar .navbar-brand {
+    font-size: 1em ;
+    text-align: left;
+
+  }
+}
+.featured-article img, .top-story img {
+  object-fit:scale-down;
+  width: 100%;
+}
+figure {
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.featured a, .top-story a {
+  font-weight:bold;
+}
+.featured-article a, .top-story a:first-of-type {
+  color:black;
+  font-size: 1.5em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px #111;
+  text-transform: capitalize;
+}
+.featured-article a:hover, .top-story a:first-of-type {
+  text-decoration: none;
+  border-bottom: 1px solid red;
 }
